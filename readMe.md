@@ -1,8 +1,11 @@
 after prerequisites are installed
 #
 vi ~/.bashrc
+
 export KOPS_CLUSTER_NAME=my-98ashishy-bucket.in
+
 export KOPS_STATE_STORE=s3://my-98ashishy-bucket.in
+
 source ~/.bashrc
 
 # to login to cluster
