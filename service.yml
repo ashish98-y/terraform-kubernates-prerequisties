@@ -6,7 +6,7 @@ spec:
     ports:
         - port: 80
           targetPort: njp
-          protocol: tcp
+          protocol: TCP
     selector:
         app: nodeapp
-    type: loadbalancer
+    type: LoadBalancer
