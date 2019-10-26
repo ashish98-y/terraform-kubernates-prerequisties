@@ -10,5 +10,5 @@ spec:
                   image: 98ashish/nodeapp:1.0
                   ports:
                         - containerPort: 3000
-                        - name: njp
+                          name: njp
 
