@@ -27,5 +27,22 @@ kops create cluster \
 # create cluster
 kops update cluster --yes
 
+# deploy to cluster
+
+login cluster master
 
 ssh admin@api.${KOPS_CLUSTER_NAME}
+
+wget <url of pod.yml>
+
+wget <url of service.yml>
+
+kubectl create -f pod.yml <or url of pod.yml>
+
+kubectl create -f service.yml <or url of service.yml>
+  
+kubectl get svc
+
+external ip of loadbalancer will have our app running
+
+kubectl describe svc <name of service.yml>
