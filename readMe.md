@@ -17,7 +17,7 @@ kops create cluster \
 --zones=ap-south-1a,ap-south-1b \
 --name=${KOPS_CLUSTER_NAME} \
 --dns private \
---master-count 1
+--master-count 1 \
 --out=. \
 --target=terraform
 
