@@ -10,8 +10,7 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 #set bucket and clusterName
-sudo sh -c 'cat << EOF >> ~/.bashrc
-export KOPS_CLUSTER_NAME=${clusterName}
-export KOPS_STATE_STORE=${bucketName}
-EOF'
-sudo source ~/.bashrc
+echo "" >> ~/.bashrc
+echo "export KOPS_CLUSTER_NAME=${bucketName}" >> ~/.bashrc
+echo "export KOPS_STATE_STORE=s3://${bucketName}" >> ~/.bashrc
+source ~/.bashrc
